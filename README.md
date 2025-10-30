@@ -31,19 +31,19 @@ This demonstrates that a model trained to optimize for **profit** creates a far 
 
 This repository contains three main notebooks, which are designed to be run in order.
 
-1.  **`01_Preprocessing.ipynb`**
+1.  **`01-Preprocessing-ipynb.ipynb`**
     * Loads the raw `accepted_2007_to_2018.csv` data (using a sample for speed).
     * Performs all data cleaning, feature engineering, and removal of "leaky" features.
     * Creates the binary target `is_default` and the `reward` (profit/loss) target.
     * Splits, scales, and saves the final clean datasets (`X_train_scaled.csv`, `y_train.csv`, etc.) to be used by the other notebooks.
 
-2.  **`02_DL_Model.ipynb`**
+2.  **`02_DL-Model-ipynb.ipynb`**
     * Implements **Task 2**.
     * Loads the clean, scaled data from Notebook 1.
     * Builds and trains a TensorFlow/Keras deep learning classifier to predict the probability of default.
     * Evaluates the model and reports the **AUC** and **F1-Score**.
 
-3.  **`03_Profit_Model.ipynb`**
+3.  **`03_Profit-Model-ipynb.ipynb`**
     * Implements **Task 3** (Offline RL).
     * Loads the clean, scaled data from Notebook 1.
     * Builds and trains a TensorFlow/Keras deep learning regressor to predict the exact reward (profit/loss) for approving a loan.
