@@ -51,6 +51,3 @@ This repository contains three main notebooks, which are designed to be run in o
     * Reports the **Estimated Policy Value**.
 
 
-## Requirements
-
-The main libraries used for this project are:
